@@ -11,7 +11,7 @@ $email=$_POST['email'];
 $pass=$_POST['password'];
   $username = 'root';
   $password = '';
-   $conn = new PDO("mysql:host=192.168.1.133;port=8080;dbname=salary;",$username,$password);
+   $conn = new PDO("mysql:host=192.168.1.133;port=80;dbname=salary;",$username,$password);
    $stmt ='SELECT email,password FROM users WHERE email="'.$email.'" AND password ="'.$pass.'"';
    $stmt1=$conn->query($stmt);
 echo $stmt;
